@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { createEventDispatcher } from "svelte";
 
-	export let letter: string;
-	export let state: LetterState = "🔳";
+	export let number: string;
+	export let state: NumberState = "🔳";
 
 	const dispatch = createEventDispatcher();
 </script>
 
-<div class={state} class:big={letter.length !== 1} on:click={() => dispatch("keystroke", letter)}>
-	{letter}<slot />
+<div class={state} class:big={number.length !== 1} on:click={() => dispatch("keystroke", number)}>
+	{number}<slot />
 </div>
 
 <style>
