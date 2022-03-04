@@ -6,7 +6,7 @@
 	export let guesses: number;
 	export let num: number;
 	export let value = "";
-	export let state: LetterState[];
+	export let state: NumberState[];
 	export function shake() {
 		animation = "shake";
 	}
