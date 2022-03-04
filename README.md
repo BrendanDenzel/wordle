@@ -4,7 +4,7 @@
 </div>
 
 ---
-A recreation of the popular game [Numberle](https://dduarte.github.io/numberle/) by Duarte, with additional modes and features.
+A recreation of the popular game [Numberle](https://dduarte.github.io/numberle/) by Dduarte, with additional modes and features.
 Hosted on GitHub pages [here](https://BrendanDenzel.github.io/wordle/).
 
 ## Additional modes
