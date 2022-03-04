@@ -7,7 +7,7 @@
 
 <h3>how to play</h3>
 <div>Guess the <strong>WORDLE</strong> in {ROWS} tries.</div>
-<div>Each guess must be a valid {COLS} letter word. Hit the enter button to submit.</div>
+<div>Each guess must be a valid {COLS} numbers. Hit the enter button to submit.</div>
 <div>
 	After each guess, the color of the tiles will change to show how close your guess was to the
 	word.
@@ -15,37 +15,37 @@
 <div class:complete={visible} class="examples">
 	<div><strong>Examples</strong></div>
 	<div class="row">
-		<Tile value="w" state="🟩" />
-		<Tile value="e" state="🔳" />
-		<Tile value="a" state="🔳" />
-		<Tile value="r" state="🔳" />
-		<Tile value="y" state="🔳" />
+		<Tile value="1" state="🟩" />
+		<Tile value="2" state="🔳" />
+		<Tile value="3" state="🔳" />
+		<Tile value="4" state="🔳" />
+		<Tile value="5" state="🔳" />
 	</div>
-	<div>The letter <strong>W</strong> is in the word and in the correct spot.</div>
+	<div>The number <strong>W</strong> is in the word and in the correct spot.</div>
 	<div class="row">
-		<Tile value="p" state="🔳" />
-		<Tile value="i" state="🟨" />
-		<Tile value="l" state="🔳" />
-		<Tile value="l" state="🔳" />
-		<Tile value="s" state="🔳" />
+		<Tile value="6" state="🔳" />
+		<Tile value="7" state="🟨" />
+		<Tile value="8" state="🔳" />
+		<Tile value="9" state="🔳" />
+		<Tile value="0" state="🔳" />
 	</div>
-	<div>The letter <strong>I</strong> is in the word but in the wrong spot.</div>
+	<div>The number <strong>I</strong> is in the word but in the wrong spot.</div>
 	<div class="row">
-		<Tile value="v" state="🔳" />
-		<Tile value="a" state="🔳" />
-		<Tile value="g" state="🔳" />
-		<Tile value="u" state="⬛" />
-		<Tile value="e" state="🔳" />
+		<Tile value="5" state="🔳" />
+		<Tile value="8" state="🔳" />
+		<Tile value="3" state="🔳" />
+		<Tile value="4" state="⬛" />
+		<Tile value="0" state="🔳" />
 	</div>
-	<div>The letter <strong>U</strong> is not in the word in any spot.</div>
+	<div>The number <strong>U</strong> is not in the word in any spot.</div>
 </div>
 <div>
 	This is a recreation of the original <a
-		href="https://www.powerlanguage.co.uk/wordle/"
-		target="_blank">Wordle</a
+		href="https://dduarte.github.io/numberle/"
+		target="_blank">Numberle</a
 	>
-	by Josh Wardle with additional modes and features. Written with Svelte, in Typescript by
-	<a href="https://github.com/MikhaD" target="_blank">MikhaD</a>.
+	by Dduarte with additional modes and features. Written with Svelte, in Typescript by
+	<a href="https://github.com/Brendandenzel" target="_blank">Brendan Denzel</a>.
 	<br />
 	Open the settings menu to see some of the additional features.
 </div>
