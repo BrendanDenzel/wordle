@@ -15,8 +15,6 @@ Hosted on GitHub pages [here](https://BrendanDenzel.github.io/wordle/).
 
 
 <details>
-<summary>To do</summary>
-
 # LICENSE
 I DO NOT ACCEPT PERMISSION TO USE OR TO CLAIM AS YOURS
 </details>
