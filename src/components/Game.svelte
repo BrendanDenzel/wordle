@@ -29,10 +29,10 @@
 		newSeed,
 		createNewGame,
 		seededRandomInt,
-		createLetterStates,
+		createNumberStates,
 		words,
 	} from "../utils";
-	import { letterStates, settings, mode } from "../stores";
+	import { numberStates, settings, mode } from "../stores";
 
 	export let word: string;
 	export let stats: Stats;
@@ -143,7 +143,7 @@
 		modeData.modes[$mode].seed = newSeed($mode);
 		game = createNewGame($mode);
 		word = words.words[seededRandomInt(0, words.words.length, modeData.modes[$mode].seed)];
-		$letterStates = createLetterStates();
+		$NumberStates = createNumberStates();
 		showStats = false;
 		showRefresh = false;
 		timer.reset($mode);
