@@ -38,19 +38,19 @@ class Tile {
 }
 
 class WordData {
-	public letterCounts: Map<string, [number, boolean]>;
+	public numberCounts: Map<string, [number, boolean]>;
 	private notSet: Set<string>;
 	public word: Tile[];
 	constructor() {
 		this.notSet = new Set<string>();
-		this.letterCounts = new Map<string, [number, boolean]>();
+		this.numberCounts = new Map<string, [number, boolean]>();
 		this.word = [];
 		for (let col = 0; col < COLS; ++col) {
 			this.word.push(new Tile());
 		}
 	}
 	confirmCount(char: string) {
-		let c = this.letterCounts.get(char);
+		let c = this.numberCounts.get(char);
 		if (!c) {
 			this.not(char);
 		} else {
@@ -58,13 +58,13 @@ class WordData {
 		}
 	}
 	countConfirmed(char: string) {
-		const val = this.letterCounts.get(char);
+		const val = this.numberCounts.get(char);
 		return val ? val[1] : false;
 	}
 	setCount(char: string, count: number) {
-		let c = this.letterCounts.get(char);
+		let c = this.numberCounts.get(char);
 		if (!c) {
-			this.letterCounts.set(char, [count, false]);
+			this.numberCounts.set(char, [count, false]);
 		} else {
 			c[0] = count;
 		}
