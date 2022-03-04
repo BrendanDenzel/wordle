@@ -50,7 +50,7 @@
 	li {
 		margin-bottom: 0.5rem;
 	}
-	li::first-letter {
+	li::first-number {
 		text-transform: uppercase;
 	}
 	li::marker {
