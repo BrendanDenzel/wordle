@@ -1,6 +1,6 @@
 {
-  "name": "wordle+",
-  "description": "A remake of the popular game Wordle with additional modes and features.",
+  "name": "Numberle+",
+  "description": "A remake of the popular game Numberle with additional modes and features.",
   "version": "1.2.3",
   "private": "true",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikhaD/wordle.git"
+    "url": "git+https://github.com/BrendanDenzel/wordle.git"
   },
   "keywords": [],
-  "author": "MikhaD",
+  "author": "Brendan Denzel",
   "bugs": {
-    "url": "https://github.com/MikhaD/wordle/issues"
+    "url": "https://github.com/BrendanDenzel/wordle/issues"
   },
-  "homepage": "https://github.com/MikhaD/wordle#readme",
+  "homepage": "https://github.com/BrendanDenzel/wordle#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
