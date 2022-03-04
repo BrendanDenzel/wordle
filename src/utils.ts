@@ -70,7 +70,7 @@ class WordData {
 		}
 	}
 	incrementCount(char: string) {
-		++this.letterCounts.get(char)[0];
+		++this.numberCounts.get(char)[0];
 	}
 	not(char: string) {
 		this.notSet.add(char);
@@ -78,7 +78,7 @@ class WordData {
 	inGlobalNotList(char: string) {
 		return this.notSet.has(char);
 	}
-	lettersNotAt(pos: number) {
+	numbersNotAt(pos: number) {
 		return new Set([...this.notSet, ...this.word[pos].notSet]);
 	}
 }
@@ -98,7 +98,7 @@ export function getRowData(n: number, board: GameBoard) {
 				}
 				continue;
 			}
-			// If this isn't the first time this letter has occured in this row
+			// If this isn't the first time this number has occured in this row
 			if (occured.has(char)) {
 				wd.incrementCount(char);
 			} else if (!wd.countConfirmed(char)) {
@@ -116,12 +116,12 @@ export function getRowData(n: number, board: GameBoard) {
 
 	let exp = "";
 	for (let pos = 0; pos < wd.word.length; ++pos) {
-		exp += wd.word[pos].value ? wd.word[pos].value : `[^${[...wd.lettersNotAt(pos)].join(" ")}]`;
+		exp += wd.word[pos].value ? wd.word[pos].value : `[^${[...wd.numbersNotAt(pos)].join(" ")}]`;
 	}
 	return (word: string) => {
 		if (new RegExp(exp).test(word)) {
 			const chars = word.split("");
-			for (const e of wd.letterCounts) {
+			for (const e of wd.numberCounts) {
 				const occurences = countOccurences(chars, e[0]);
 				if (!occurences || (e[1][1] && occurences !== e[1][0])) return false;
 			}
@@ -135,9 +135,9 @@ function countOccurences<T>(arr: T[], val: T) {
 	return arr.reduce((count, v) => v === val ? count + 1 : count, 0);
 }
 
-export function getState(word: string, guess: string): LetterState[] {
+export function getState(word: string, guess: string): NumberState[] {
 	const charArr = word.split("");
-	const result = Array<LetterState>(5).fill("⬛");
+	const result = Array<NumberState>(5).fill("⬛");
 	for (let i = 0; i < word.length; ++i) {
 		if (charArr[i] === guess.charAt(i)) {
 			result[i] = "🟩";
@@ -284,7 +284,7 @@ export function createDefaultStats(mode: GameMode): Stats {
 	};
 };
 
-export function createLetterStates(): { [key: string]: LetterState; } {
+export function createNumberStates(): { [key: string]: NumberState; } {
 	return {
 		a: "🔳",
 		b: "🔳",
