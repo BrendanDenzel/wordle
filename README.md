@@ -4,8 +4,8 @@
 </div>
 
 ---
-A recreation of the popular game [Numberle](https://dduarte.github.io/numberle/) by Dduarte, with additional modes and features.
-Hosted on GitHub pages [here](https://BrendanDenzel.github.io/wordle/).
+A recreation of the popular game [Numberle](https://dduarte.github.io/numberle/), with additional modes and features.
+Hosted on GitHub pages [here](https://BrendanDenzel.github.io/wordle/). Made by Brendan Denzel!
 
 ## Additional modes
 **Hourly mode**: A new number every hour.
