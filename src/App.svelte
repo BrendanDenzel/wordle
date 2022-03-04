@@ -5,13 +5,13 @@
 		createDefaultStats,
 		createNewGame,
 		createDefaultSettings,
-		createLetterStates,
+		createNumberStates,
 		ROWS,
 		getWordNumber,
 		words,
 	} from "./utils";
 	import Game from "./components/Game.svelte";
-	import { letterStates, settings, mode } from "./stores";
+	import { numberStates, settings, mode } from "./stores";
 	import { GameMode } from "./enums";
 	import { Toaster } from "./components/widgets";
 	import { setContext } from "svelte";
@@ -65,19 +65,19 @@
 				state = temp;
 			}
 		}
-		// Set the letter states when data for a new game mode is loaded so the keyboard is correct
-		const letters = createLetterStates();
+		// Set the number states when data for a new game mode is loaded so the keyboard is correct
+		const numbers = createNumberStates();
 		for (let row = 0; row < ROWS; ++row) {
 			for (let col = 0; col < state.board.words[row].length; ++col) {
 				if (
-					letters[state.board.words[row][col]] === "🔳" ||
+					numbers[state.board.words[row][col]] === "🔳" ||
 					state.board.state[row][col] === "🟩"
 				) {
-					letters[state.board.words[row][col]] = state.board.state[row][col];
+					numbers[state.board.words[row][col]] = state.board.state[row][col];
 				}
 			}
 		}
-		letterStates.set(letters);
+		numberStates.set(numbers);
 	});
 
 	$: saveState(state);
