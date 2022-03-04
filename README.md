@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://mikhad.github.io/wordle/" ><img src="https://github.com/MikhaD/wordle/workflows/Publish/badge.svg?branch=main" alt="Publish workflow"/></a>
-  <img src="https://img.shields.io/github/package-json/v/MikhaD/wordle" alt="GitHub package.json version" />
+  <a href="https://mikhad.github.io/wordle/" ><img src="https://github.com/BrendanDenzel/wordle/workflows/Publish/badge.svg?branch=main" alt="Publish workflow"/></a>
+  <img src="https://img.shields.io/github/package-json/v/BrendanDenzel/wordle" alt="GitHub package.json version" />
 </div>
 
 ---
