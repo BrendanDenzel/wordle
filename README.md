@@ -1,5 +1,4 @@
 <div align="center">
-  <a href="https://BrendanDenzel.github.io/wordle/" ><img src="https://github.com/BrendanDenzel/wordle/workflows/Publish/badge.svg?branch=main" alt="Publish workflow"/></a>
   <img src="https://img.shields.io/github/package-json/v/BrendanDenzel/wordle" alt="GitHub package.json version" />
 </div>
 
