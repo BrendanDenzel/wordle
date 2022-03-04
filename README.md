@@ -13,8 +13,7 @@ Hosted on GitHub pages [here](https://BrendanDenzel.github.io/wordle/).
 **Infinite mode**: A new number every time you refresh, for the true addicts.
 
 
+<summary>LICENSE</summary>
 
-<details>
 # LICENSE
 I DO NOT ACCEPT PERMISSION TO USE OR TO CLAIM AS YOURS
-</details>
