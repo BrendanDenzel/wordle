@@ -59,7 +59,7 @@
 
 	function submitWord() {
 		if (game.board.words[game.guesses].length !== COLS) {
-			toaster.pop("Not enough letters");
+			toaster.pop("Not enough numbers");
 			board.shake(game.guesses);
 		} else if (words.contains(game.board.words[game.guesses])) {
 			if (game.guesses > 0) {
@@ -67,7 +67,7 @@
 				if ($settings.hard[$mode]) {
 					if (hm.type === "🟩") {
 						toaster.pop(
-							`${contractNum(hm.pos + 1)} letter must be ${hm.char.toUpperCase()}`
+							`${contractNum(hm.pos + 1)} number must be ${hm.char.toUpperCase()}`
 						);
 						board.shake(game.guesses);
 						return;
@@ -83,9 +83,9 @@
 			const state = getState(word, game.board.words[game.guesses]);
 			game.board.state[game.guesses] = state;
 			state.forEach((e, i) => {
-				const ls = $letterStates[game.board.words[game.guesses][i]];
+				const ls = $numberStates[game.board.words[game.guesses][i]];
 				if (ls === "🔳" || e === "🟩") {
-					$letterStates[game.board.words[game.guesses][i]] = e;
+					$numberStates[game.board.words[game.guesses][i]] = e;
 				}
 			});
 			++game.guesses;
