@@ -6,7 +6,7 @@
 	import { DELAY_INCREMENT, ROWS } from "../../utils";
 
 	export let value = "";
-	export let state: LetterState;
+	export let state: NumberState;
 	export let position = 0;
 	export function bounce() {
 		setTimeout(() => (animation = "bounce"), (ROWS + position) * DELAY_INCREMENT);
