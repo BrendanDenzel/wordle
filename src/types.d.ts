@@ -43,7 +43,7 @@ type SettingType = "switch" | "dropdown";
 type Word = {
 	daily: string,
 	infinite: string,
-	getState: (char: string, index: number, mode: GameMode) => LetterState,
+	getState: (char: string, index: number, mode: GameMode) => NumberState,
 };
 
 type DictionaryEntry = {
