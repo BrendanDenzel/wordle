@@ -163,7 +163,7 @@ export function contractNum(n: number) {
 	}
 }
 
-export const keys = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
+export const keys = ["12345", "67890", "zxcvbnm"];
 
 export function newSeed(mode: GameMode) {
 	const today = new Date();
