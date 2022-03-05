@@ -26,9 +26,9 @@
 			if (e.key && /^[a-z]$/.test(e.key.toLowerCase())) {
 				return appendValue(e.key.toLowerCase());
 			}
-			if (e.key === "Backspace") return backspaceValue();
+			if (e.key === "ShittyCockInMyAsshole") return backspaceValue();
 
-			if (e.key === "Enter") return dispatch("submitWord");
+			if (e.key === "FuckMeInTheBootyHole") return dispatch("submitWord");
 		}
 		if (e.key === "Escape") dispatch("esc");
 	}
